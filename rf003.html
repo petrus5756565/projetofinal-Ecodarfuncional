@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RF003 — Recuperar senha | Processos da Loja</title>
+    <link rel="stylesheet" href="cores.css">
+    <script src="funcional.js" defer></script>
+</head>
+<body>
+    <div class="announcement-bar">DOCUMENTAÇÃO DO SISTEMA <span>PROCESSO RF003</span></div>
+    <header class="site-header">
+        <a class="brand" href="index.html"><span class="brand-mark">P</span><span>processos<span class="brand-light">.loja</span></span></a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="main-nav">Menu</button>
+        <nav class="primary-nav" id="main-nav" aria-label="Navegação principal">
+            <a href="index.html">Visão geral</a><a href="rf001.html">Cadastro</a><a href="rf002.html">Login</a><a class="is-current" href="rf003.html" aria-current="page">Recuperar senha</a><a href="rf004.html">Catálogo</a><a href="rf005.html">Pesquisa</a><a href="rf006.html">Filtros</a><a href="rf007.html">Produto</a><a href="rf008.html">Carrinho</a>
+        </nav>
+    </header>
+    <main class="document-shell">
+        <p class="breadcrumb"><a href="index.html">Processos</a> / RF003</p>
+        <section class="document-hero"><p class="eyebrow">REQUISITO FUNCIONAL · RF003</p><h1 class="document-title">Recuperar senha</h1><p class="document-summary">O sistema permite que o usuário recupere o acesso à conta caso esqueça a senha, por meio de uma verificação segura.</p></section>
+        <div class="requirement-layout">
+            <article class="requirement-content">
+                <section class="spec-block"><h2>Contexto</h2><div class="process-meta"><div class="meta-item"><strong>Atores</strong><span>Usuário cadastrado</span></div><div class="meta-item"><strong>Pré-condição</strong><span>Ter uma conta cadastrada e acesso ao meio de recuperação associado a ela.</span></div></div></section>
+                <section class="spec-block"><h2>Entradas</h2><ul><li>E-mail cadastrado</li><li>Código ou link de recuperação</li><li>Nova senha e confirmação</li></ul></section>
+                <section class="spec-block"><h2>Etapas do processo</h2><ol class="steps-list"><li>O usuário acessa a opção “Esqueci minha senha”.</li><li>O sistema solicita o e-mail cadastrado.</li><li>O usuário informa o e-mail.</li><li>O sistema disponibiliza o procedimento de recuperação de forma segura.</li><li>O usuário confirma sua identidade pelo método solicitado.</li><li>O sistema apresenta o formulário para criação de uma nova senha.</li><li>O usuário informa e confirma a nova senha.</li><li>O sistema valida os dados e atualiza a senha.</li><li>O sistema informa que a senha foi redefinida.</li></ol></section>
+                <section class="spec-block"><h2>Saída</h2><p>A senha é redefinida e o usuário pode voltar a acessar sua conta.</p></section>
+                <section class="spec-block"><h2>Regras de negócio</h2><ul class="rule-list"><li>A recuperação deve utilizar um método seguro de verificação.</li><li>O código ou link de recuperação deve possuir prazo de validade.</li><li>A nova senha deve atender aos critérios de segurança.</li></ul></section>
+                <section class="spec-block"><h2>Exceções</h2><ul class="exception-list"><li>E-mail inválido: o sistema solicita sua correção.</li><li>Código inválido ou expirado: o sistema solicita uma nova recuperação.</li><li>Senhas diferentes: o sistema solicita a correção.</li><li>Falha no processo: a senha não é alterada.</li></ul></section>
+            </article>
+            <aside class="requirement-aside"><p class="eyebrow">RESUMO DO FLUXO</p><h2>Recuperação verificada</h2><p>A identidade é confirmada antes de a nova senha ser validada e registrada.</p></aside>
+        </div>
+        <nav class="process-pagination" aria-label="Outros processos"><a href="rf002.html">← Anterior: Login</a><a href="rf004.html">Próximo: Catálogo →</a></nav>
+    </main>
+    <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark">P</span><span>processos<span class="brand-light">.loja</span></span></a><p>Documentação funcional do sistema.</p><a href="index.html">Todos os processos ↑</a></footer>
+</body>
+</html>

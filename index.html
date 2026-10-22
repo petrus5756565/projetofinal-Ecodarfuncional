@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#153b30">
+    <title>Processos da Loja | Documentação</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cores.css">
+    <script src="funcional.js" defer></script>
+</head>
+<body>
+    <div class="announcement-bar">DOCUMENTAÇÃO DO SISTEMA <span>PROCESSOS FUNCIONAIS · RF001 — RF008</span></div>
+    <header class="site-header">
+        <a class="brand" href="index.html" aria-label="Processos da Loja, início"><span class="brand-mark">P</span><span>processos<span class="brand-light">.loja</span></span></a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="main-nav">Menu</button>
+        <nav class="primary-nav" id="main-nav" aria-label="Navegação principal">
+            <a class="is-current" href="index.html" aria-current="page">Visão geral</a>
+            <a href="rf001.html">Cadastro</a><a href="rf002.html">Login</a><a href="rf003.html">Recuperar senha</a>
+            <a href="rf004.html">Catálogo</a><a href="rf005.html">Pesquisa</a><a href="rf006.html">Filtros</a>
+            <a href="rf007.html">Produto</a><a href="rf008.html">Carrinho</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero intro-hero">
+            <div class="hero-copy">
+                <p class="eyebrow">SISTEMA DE LOJA ONLINE · DOCUMENTAÇÃO</p>
+                <h1>Como funciona<br><span>cada processo.</span></h1>
+                <p class="hero-description">Consulte as etapas, entradas, regras e exceções de cada funcionalidade da loja, da criação de conta ao carrinho.</p>
+                <div class="hero-actions"><a class="button button-light" href="#processos">Explorar processos <span aria-hidden="true">↘</span></a><span class="hero-text-link">8 requisitos documentados</span></div>
+                <div class="hero-note"><span class="hero-note-mark">+</span><span>Fluxos organizados para consulta<br>em páginas individuais.</span></div>
+            </div>
+            <div class="hero-visual" role="img" aria-label="Painéis solares em uma instalação de energia renovável"><div class="hero-caption"><span>MAPA DE PROCESSOS</span><strong>Da entrada à saída.</strong></div><span class="hero-serial">RF001 — RF008</span></div>
+        </section>
+        <section class="trust-strip" aria-label="Organização dos processos"><p><span>01</span> Acesso e conta</p><p><span>02</span> Produtos e busca</p><p><span>03</span> Compra e carrinho</p></section>
+        <section class="app-tour page-width" aria-labelledby="app-tour-title">
+            <div class="section-heading"><div><p class="eyebrow">VISÃO DO APLICATIVO</p><h2 id="app-tour-title">Da entrada ao perfil.</h2></div><p class="tour-intro">As telas mostram o caminho de quem entra na Ecodar, encontra um produto e acompanha a compra.</p></div>
+            <div class="screen-gallery">
+                <article class="screen-card">
+                    <div class="phone-preview login-screen" role="img" aria-label="Prévia da tela de login da Ecodar">
+                        <div class="login-brand">Ecodar</div><span class="mini-label">E-mail</span><div class="mini-input"></div><span class="mini-label">Senha</span><div class="mini-input"></div><div class="mini-button">Entrar</div><span class="login-help">Esqueci minha senha</span>
+                    </div>
+                    <h3>1. Entrar</h3><p>A pessoa informa e-mail e senha para acessar sua conta.</p>
+                </article>
+                <article class="screen-card">
+                    <div class="phone-preview app-screen home-screen" role="img" aria-label="Prévia da página inicial da Ecodar"><div class="mini-status"><span>◧</span><span>▰</span></div><strong>Home</strong><div class="mini-nav"><span>⌂</span><span>▦</span><span>☷</span><span>◉</span></div></div>
+                    <h3>2. Início</h3><p>A área inicial oferece acesso às principais seções da loja.</p>
+                </article>
+                <article class="screen-card">
+                    <div class="phone-preview app-screen cart-screen"><div class="mini-status"><span>◧</span><span>▰</span></div><h4>Carrinho</h4><div class="mini-product">3x Gerador<br>2x Bateria<br>Camisa GG</div><div class="mini-plant" aria-hidden="true">⌁ ❧ ⌁</div><div class="mini-actions"><span>Cancelar</span><span>Comprar</span></div><div class="mini-nav"><span>⌂</span><span>▦</span><span>☷</span><span>◉</span></div></div>
+                    <h3>3. Carrinho</h3><p>Os itens e quantidades podem ser conferidos antes da compra.</p>
+                </article>
+                <article class="screen-card">
+                    <div class="phone-preview app-screen search-screen"><div class="mini-status"><span>◧</span><span>▰</span></div><div class="mini-search">⌕ Pesquisar</div><div class="mini-results"><div><b>Gerador solar</b><span>Energia portátil</span></div><i aria-hidden="true">▰</i><div><b>Bateria</b><span>Acessório</span></div><i aria-hidden="true">▰</i></div><div class="mini-nav"><span>⌂</span><span>▦</span><span>☷</span><span>◉</span></div></div>
+                    <h3>4. Pesquisar</h3><p>O campo de busca ajuda a localizar produtos no catálogo.</p>
+                </article>
+                <article class="screen-card">
+                    <div class="phone-preview app-screen delivery-screen"><div class="mini-status"><span>◧</span><span>▰</span></div><div class="delivery-tile">Gerador</div><span class="delivery-caption">Lista de entregas</span><div class="mini-nav"><span>⌂</span><span>▦</span><span>☷</span><span>◉</span></div></div>
+                    <h3>5. Entregas</h3><p>A seção reúne os pedidos e permite consultar as entregas.</p>
+                </article>
+                <article class="screen-card">
+                    <div class="phone-preview app-screen about-screen"><div class="mini-status"><span>◧</span><span>▰</span></div><p>Sobre nós</p><div class="mini-nav"><span>⌂</span><span>▦</span><span>☷</span><span>◉</span></div></div>
+                    <h3>6. Sobre nós</h3><p>Apresenta informações institucionais sobre a Ecodar.</p>
+                </article>
+                <article class="screen-card">
+                    <div class="phone-preview app-screen profile-screen"><div class="mini-status"><span>◧</span><span>▰</span></div><p>Perfil</p><div class="mini-nav"><span>⌂</span><span>▦</span><span>☷</span><span>◉</span></div></div>
+                    <h3>7. Perfil</h3><p>Área para consultar as informações da conta do usuário.</p>
+                </article>
+            </div>
+        </section>
+        <section class="catalog-section page-width" id="processos">
+            <div class="section-heading"><div><p class="eyebrow">NAVEGUE POR FUNCIONALIDADE</p><h2>Processos da loja,<br>um passo de cada vez.</h2></div><span class="section-count">08 PROCESSOS</span></div>
+            <div class="process-grid">
+                <a class="process-card" href="rf001.html"><span class="process-number">RF001</span><h3>Fazer cadastro</h3><p>Como uma nova conta é criada e validada.</p><span class="process-arrow">→</span></a>
+                <a class="process-card" href="rf002.html"><span class="process-number">RF002</span><h3>Fazer login</h3><p>Como as credenciais dão acesso à conta.</p><span class="process-arrow">→</span></a>
+                <a class="process-card" href="rf003.html"><span class="process-number">RF003</span><h3>Recuperar senha</h3><p>Como o acesso pode ser recuperado com segurança.</p><span class="process-arrow">→</span></a>
+                <a class="process-card" href="rf004.html"><span class="process-number">RF004</span><h3>Ver catálogo</h3><p>Como os produtos são apresentados ao visitante.</p><span class="process-arrow">→</span></a>
+                <a class="process-card" href="rf005.html"><span class="process-number">RF005</span><h3>Pesquisar produtos</h3><p>Como palavras-chave encontram itens no catálogo.</p><span class="process-arrow">→</span></a>
+                <a class="process-card" href="rf006.html"><span class="process-number">RF006</span><h3>Filtrar e ordenar</h3><p>Como a lista é refinada pelas preferências.</p><span class="process-arrow">→</span></a>
+                <a class="process-card" href="rf007.html"><span class="process-number">RF007</span><h3>Ver detalhes</h3><p>Quais informações ajudam a avaliar um produto.</p><span class="process-arrow">→</span></a>
+                <a class="process-card" href="rf008.html"><span class="process-number">RF008</span><h3>Gerenciar carrinho</h3><p>Como produtos e quantidades são organizados.</p><span class="process-arrow">→</span></a>
+            </div>
+        </section>
+        <section class="closing-banner"><div><p class="eyebrow">LEITURA DOS FLUXOS</p><h2>Cada processo explica<br>o que acontece e quando.</h2></div><p class="closing-note">Entradas, etapas, resultado esperado e situações excepcionais, em um só lugar.</p></section>
+    </main>
+    <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark">P</span><span>processos<span class="brand-light">.loja</span></span></a><p>Documentação funcional do sistema.</p><a href="#processos">Voltar aos processos <span aria-hidden="true">↑</span></a></footer>
+</body>
+</html>

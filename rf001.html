@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RF001 — Fazer cadastro | Processos da Loja ordem de requisitto funcional e não funcional.</title>
+    <link rel="stylesheet" href="cores.css">
+    <script src="funcional.js" defer></script>
+</head>
+<body>
+    <div class="announcement-bar">DOCUMENTAÇÃO DO SISTEMA <span>PROCESSO RF001</span></div>
+    <header class="site-header">
+        <a class="brand" href="index.html"><span class="brand-mark">P</span><span>processos<span class="brand-light">.loja</span></span></a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="main-nav">Menu</button>
+        <nav class="primary-nav" id="main-nav" aria-label="Navegação principal">
+            <a href="index.html">Visão geral todo processos em ordem.</a><a class="is-current" href="rf001.html" aria-current="page">Cadastro</a><a href="rf002.html">Login</a><a href="rf003.html">Recuperar senha</a><a href="rf004.html">Catálogo</a><a href="rf005.html">Pesquisa</a><a href="rf006.html">Filtros</a><a href="rf007.html">Produto</a><a href="rf008.html">Carrinho</a>
+        </nav>
+    </header>
+    <main class="document-shell">
+        <p class="breadcrumb"><a href="index.html">Processos</a> / RF001</p>
+        <section class="document-hero"><p class="eyebrow">REQUISITO FUNCIONAL · RF001</p><h1 class="document-title">Fazer cadastro</h1><p class="document-summary">O sistema permite que novos usuários criem uma conta para acessar as funcionalidades da plataforma e realizar compras.</p></section>
+        <div class="requirement-layout">
+            <article class="requirement-content">
+                <section class="spec-block"><h2>Contexto</h2><div class="process-meta"><div class="meta-item"><strong>Atores</strong><span>Usuário</span></div><div class="meta-item"><strong>Pré-condição</strong><span>Não possuir conta cadastrada com o mesmo e-mail.</span></div></div></section>
+                <section class="spec-block"><h2>Entradas</h2><ul><li>Nome completo</li><li>E-mail</li><li>Senha e confirmação de senha</li><li>Data de nascimento, quando necessária</li><li>Demais informações solicitadas pelo sistema</li></ul></section>
+                <section class="spec-block"><h2>Etapas do processo</h2><ol class="steps-list"><li>O usuário acessa a opção “Criar conta”.</li><li>O sistema apresenta o formulário de cadastro.</li><li>O usuário preenche os dados solicitados.</li><li>O sistema valida os campos obrigatórios.</li><li>O sistema verifica se o e-mail já está cadastrado.</li><li>O sistema verifica se a senha atende aos critérios de segurança e corresponde à confirmação.</li><li>O sistema registra a nova conta.</li><li>O sistema informa que o cadastro foi realizado com sucesso.</li></ol></section>
+                <section class="spec-block"><h2>Saída</h2><p>Uma nova conta de usuário é criada e fica disponível para autenticação.</p></section>
+                <section class="spec-block"><h2>Regras de negócio</h2><ul class="rule-list"><li>O e-mail deve possuir um formato válido.</li><li>O e-mail não pode estar associado a outra conta.</li><li>A senha deve atender aos critérios mínimos de segurança.</li><li>Todos os campos obrigatórios devem ser preenchidos.</li></ul></section>
+                <section class="spec-block"><h2>Exceções</h2><ul class="exception-list"><li>Campo obrigatório vazio: o sistema informa o usuário.</li><li>E-mail já cadastrado: o sistema impede o registro.</li><li>Senhas diferentes: o sistema solicita a correção.</li><li>Dados inválidos: o cadastro não é concluído.</li></ul></section>
+            </article>
+            <aside class="requirement-aside"><p class="eyebrow">RESUMO DO FLUXO</p><h2>Da identificação à conta ativa</h2><p>O sistema confere os dados antes de criar uma conta única e pronta para autenticação.</p></aside>
+        </div>
+        <nav class="process-pagination" aria-label="Outros processos"><a href="index.html">← Visão geral</a><a href="rf002.html">Próximo: Fazer login →</a></nav>
+    </main>
+    <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark">P</span><span>processos<span class="brand-light">.loja</span></span></a><p>Documentação funcional do sistema.</p><a href="index.html">Todos os processos ↑</a></footer>
+</body>
+</html>

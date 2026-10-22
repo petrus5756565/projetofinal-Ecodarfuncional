@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RF004 — Visualizar catálogo | Processos da Loja</title>
+    <link rel="stylesheet" href="cores.css">
+    <script src="funcional.js" defer></script>
+</head>
+<body>
+    <div class="announcement-bar">DOCUMENTAÇÃO DO SISTEMA <span>PROCESSO RF004</span></div>
+    <header class="site-header">
+        <a class="brand" href="index.html"><span class="brand-mark">P</span><span>processos<span class="brand-light">.loja</span></span></a>
+        <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="main-nav">Menu</button>
+        <nav class="primary-nav" id="main-nav" aria-label="Navegação principal">
+            <a href="index.html">Visão geral</a><a href="rf001.html">Cadastro</a><a href="rf002.html">Login</a><a href="rf003.html">Recuperar senha</a><a class="is-current" href="rf004.html" aria-current="page">Catálogo</a><a href="rf005.html">Pesquisa</a><a href="rf006.html">Filtros</a><a href="rf007.html">Produto</a><a href="rf008.html">Carrinho</a>
+        </nav>
+    </header>
+    <main class="document-shell">
+        <p class="breadcrumb"><a href="index.html">Processos</a> / RF004</p>
+        <section class="document-hero"><p class="eyebrow">REQUISITO FUNCIONAL · RF004</p><h1 class="document-title">Visualizar catálogo</h1><p class="document-summary">O sistema permite que usuários e visitantes consultem os produtos de energia renovável disponíveis para compra.</p></section>
+        <div class="requirement-layout">
+            <article class="requirement-content">
+                <section class="spec-block"><h2>Contexto</h2><div class="process-meta"><div class="meta-item"><strong>Atores</strong><span>Usuário e visitante</span></div><div class="meta-item"><strong>Pré-condição</strong><span>O catálogo de produtos deve estar disponível para consulta.</span></div></div></section>
+                <section class="spec-block"><h2>Entradas</h2><ul><li>Acesso à página de produtos</li><li>Categoria de produto, quando selecionada</li></ul></section>
+                <section class="spec-block"><h2>Etapas do processo</h2><ol class="steps-list"><li>O usuário acessa a página de produtos.</li><li>O sistema consulta os produtos disponíveis para venda.</li><li>O sistema organiza os produtos por categorias.</li><li>O sistema apresenta os produtos com suas informações principais.</li><li>O usuário pode selecionar um produto para consultar seus detalhes.</li></ol></section>
+                <section class="spec-block"><h2>Saída</h2><p>O catálogo é exibido com os produtos disponíveis para consulta.</p></section>
+                <section class="spec-block"><h2>Regras de negócio</h2><ul class="rule-list"><li>Somente produtos publicados para venda devem ser exibidos.</li><li>Cada produto deve apresentar, no mínimo, nome, imagem, preço e disponibilidade.</li><li>Os produtos podem ser organizados em categorias, como energia solar, eólica e acessórios.</li></ul></section>
+                <section class="spec-block"><h2>Exceções</h2><ul class="exception-list"><li>Sem produtos disponíveis: o sistema informa que o catálogo está vazio.</li><li>Falha no carregamento: o sistema informa que não foi possível exibir os produtos.</li></ul></section>
+            </article>
+            <aside class="requirement-aside"><p class="eyebrow">RESUMO DO FLUXO</p><h2>Produtos disponíveis</h2><p>O catálogo organiza os itens publicados e apresenta os dados principais para consulta.</p></aside>
+        </div>
+        <nav class="process-pagination" aria-label="Outros processos"><a href="rf003.html">← Anterior: Recuperar senha</a><a href="rf005.html">Próximo: Pesquisar produtos →</a></nav>
+    </main>
+    <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark">P</span><span>processos<span class="brand-light">.loja</span></span></a><p>Documentação funcional do sistema.</p><a href="index.html">Todos os processos ↑</a></footer>
+</body>
+</html>
